@@ -1,1 +1,7 @@
-truthsocial.com
+
+# 自定义代理列表
+
+# 域名后缀匹配
+DOMAIN-SUFFIX,truthsocial.com
+# 域名关键字匹配
+DOMAIN-KEYWORD,truthsocial
