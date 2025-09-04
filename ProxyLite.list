@@ -1,5 +1,5 @@
 # 自定义代理列表
-
+DOMAIN-SUFFIX,x1080x.com
 # 域名后缀匹配
 DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-SUFFIX,ibllc.com
