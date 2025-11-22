@@ -1,1 +1,8 @@
-111
+# 内容：OpenAi Bard anthropic
+# 域名关键字匹配
+# DOMAIN-KEYWORD,openai
+# DOMAIN-KEYWORD,anthropic
+
+# 域名后缀匹配
+# DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,mumu.nie.netease.com
