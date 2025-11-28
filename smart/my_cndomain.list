@@ -4,7 +4,7 @@
 DOMAIN-SUFFIX,v.8921391.xyz
 DOMAIN-SUFFIX,llg01.com
 DOMAIN-SUFFIX,duolingo.com
-DOMAIN-SUFFIX,*.duolingo.com
+DOMAIN-SUFFIX,cloudfront.net
 # ibkr
 DOMAIN-SUFFIX,ibkr.com
 DOMAIN-SUFFIX,ibllc.com
