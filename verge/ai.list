@@ -1,0 +1,91 @@
+# AI services
+
+# OpenAI / ChatGPT / Sora
+DOMAIN-KEYWORD,chatgpt
+DOMAIN-KEYWORD,openai
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,sora.com
+
+# Anthropic / Claude
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+
+# Google AI / Gemini
+DOMAIN-KEYWORD,bard
+DOMAIN-KEYWORD,gemini
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,makersuite.google.com
+
+# Microsoft Copilot
+DOMAIN-KEYWORD,copilot
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bingapis.com
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,copilotstudio.microsoft.com
+DOMAIN-SUFFIX,edgeservices.bing.com
+
+# Perplexity
+DOMAIN-KEYWORD,perplexity
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN-SUFFIX,perplexity.ai
+
+# xAI / Grok
+DOMAIN-KEYWORD,grok
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+
+# Poe
+DOMAIN-SUFFIX,poe.com
+
+# Mistral AI
+DOMAIN-KEYWORD,mistral
+DOMAIN-SUFFIX,mistral.ai
+
+# Cohere
+DOMAIN-SUFFIX,cohere.ai
+
+# Hugging Face
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,hf.co
+
+# Replicate
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery
+
+# Stability AI / DreamStudio
+DOMAIN-SUFFIX,dreamstudio.ai
+DOMAIN-SUFFIX,stability.ai
+
+# Midjourney
+DOMAIN-SUFFIX,midjourney.com
+
+# Runway
+DOMAIN-SUFFIX,runwayml.com
+
+# Cursor / Windsurf / Codeium
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,windsurf.com
+
+# AI auth / telemetry / payment dependencies
+DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
