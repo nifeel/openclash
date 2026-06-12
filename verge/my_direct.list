@@ -1,7 +1,7 @@
 # 自定义国内直连连补充列表(国内域名不解析时，防止走代理使用)
 
 # MyList
-DOMAIN-SUFFIX,v.8921391.xyz
+DOMAIN-SUFFIX,hcrm.mu-kang.com
 DOMAIN-SUFFIX,llg01.com
 DOMAIN-SUFFIX,duolingo.com
 # ibkr
