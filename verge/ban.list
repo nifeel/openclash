@@ -1,5 +1,14 @@
 # 内容：OpenAi Bard anthropic
 # 域名关键字匹配
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,azure.com
 # DOMAIN-KEYWORD,openai
 # DOMAIN-KEYWORD,anthropic
 
