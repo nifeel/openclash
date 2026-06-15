@@ -1,5 +1,11 @@
 # 自定义国内直连连补充列表(国内域名不解析时，防止走代理使用)
 
+
+#work
+DOMAIN-SUFFIX,180.167.95.250
+DOMAIN-SUFFIX,yingsheng.xin
+DOMAIN-SUFFIX,112.19.9.109
+
 # MyList
 DOMAIN-SUFFIX,hcrm.mu-kang.com
 DOMAIN-SUFFIX,oa.synyi.com
