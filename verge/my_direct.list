@@ -2,8 +2,8 @@
 
 
 #work
-IP-CIDR,180.167.95.250/32
-IP-CIDR,112.19.9.109/32
+IP-CIDR,180.167.95.250/32,no-resolve
+IP-CIDR,112.19.9.109/32,no-resolve
 DOMAIN-SUFFIX,yingsheng.xin
 
 
