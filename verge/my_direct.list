@@ -6,7 +6,7 @@ IP-CIDR,180.167.95.250/32,no-resolve
 IP-CIDR,112.19.9.109/32,no-resolve
 DOMAIN-SUFFIX,yingsheng.xin
 DOMAIN-SUFFIX,bdg-brain.com
-
+DOMAIN-KEYWORD,hcrm.mu-kang
 
 # MyList
 DOMAIN-SUFFIX,hcrm.mu-kang.com
@@ -23,6 +23,7 @@ DOMAIN-SUFFIX,lanzov.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,baidu
+
 
 # IP段匹配
 IP-CIDR,219.146.1.66/32,no-resolve
