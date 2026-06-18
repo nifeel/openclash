@@ -5,13 +5,14 @@
 DOMAIN-SUFFIX,deltahealth.com.cn
 IP-CIDR,180.167.95.250/32,no-resolve
 IP-CIDR,112.19.9.109/32,no-resolve
-DOMAIN-SUFFIX,yingsheng.xin
+DOMAIN-SUFFIX,yingsheng.xin,no-resolve
 DOMAIN-SUFFIX,bdg-brain.com
 DOMAIN-KEYWORD,mu-kang
 DOMAIN-SUFFIX,hcrm.mu-kang.com
 DOMAIN-SUFFIX,oa.synyi.com
 
 # MyList
+
 DOMAIN-SUFFIX,hetzner.com
 DOMAIN-SUFFIX,llg01.com
 DOMAIN-SUFFIX,todesk.com
