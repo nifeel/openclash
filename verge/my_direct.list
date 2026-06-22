@@ -13,7 +13,7 @@ DOMAIN-SUFFIX,oa.synyi.com
 
 # MyList
 IP-CIDR,167.233.140.161/32,no-resolve
-DOMAIN-SUFFIX,hetzner.com
+DOMAIN-SUFFIX,*.hetzner.com
 DOMAIN-SUFFIX,hetzner.com
 DOMAIN-SUFFIX,llg01.com
 DOMAIN-SUFFIX,todesk.com
