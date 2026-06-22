@@ -2,6 +2,7 @@
 
 
 #work
+IP-CIDR,139.196.201.82/32,no-resolve
 DOMAIN-SUFFIX,deltahealth.com.cn
 IP-CIDR,180.167.95.250/32,no-resolve
 IP-CIDR,112.19.9.109/32,no-resolve
@@ -12,7 +13,7 @@ DOMAIN-SUFFIX,hcrm.mu-kang.com
 DOMAIN-SUFFIX,oa.synyi.com
 
 # MyList
-IP-CIDR,139.196.201.82,no-resolve
+
 IP-CIDR,167.233.140.161/32,no-resolve
 DOMAIN-SUFFIX,*.hetzner.com
 DOMAIN-SUFFIX,hetzner.com
