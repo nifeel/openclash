@@ -2,6 +2,8 @@
 
 
 #work
+
+IP-CIDR,27.115.2.182/32,no-resolve
 IP-CIDR,139.196.201.82/32,no-resolve
 DOMAIN-SUFFIX,deltahealth.com.cn
 IP-CIDR,180.167.95.250/32,no-resolve
