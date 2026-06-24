@@ -15,7 +15,7 @@ DOMAIN-SUFFIX,hcrm.mu-kang.com
 DOMAIN-SUFFIX,oa.synyi.com
 
 # MyList
-
+DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,wjx.com
 IP-CIDR,192.168.0.0/32,no-resolve
