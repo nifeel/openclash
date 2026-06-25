@@ -15,6 +15,12 @@ DOMAIN-SUFFIX,hcrm.mu-kang.com
 DOMAIN-SUFFIX,oa.synyi.com
 
 # MyList
+PROCESS-NAME,tailscaled,DIRECT
+PROCESS-NAME,tailscale-ipn,DIRECT
+DOMAIN-SUFFIX,tailscale.com,DIRECT
+DOMAIN-SUFFIX,tailscale.io,DIRECT
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+IP-CIDR,192.168.133.0/24,DIRECT,no-resolve
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,futunn.com
 DOMAIN-SUFFIX,wjx.com
