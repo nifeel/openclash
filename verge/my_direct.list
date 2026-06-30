@@ -3,6 +3,11 @@
 
 #work
 
+
+IP-CIDR,100.64.0.0/10,no-resolve
+IP-CIDR,192.168.133.0/24,no-resolve
+DOMAIN-SUFFIX,tailscale.com
+DOMAIN-SUFFIX,tailscale.io
 IP-CIDR,27.115.2.182/32,no-resolve
 IP-CIDR,139.196.201.82/32,no-resolve
 DOMAIN-SUFFIX,deltahealth.com.cn
