@@ -20,6 +20,8 @@ DOMAIN-SUFFIX,hcrm.mu-kang.com
 DOMAIN-SUFFIX,oa.synyi.com
 
 # MyList
+
+DOMAIN-SUFFIX,right.com.cn
 PROCESS-NAME,tailscaled,DIRECT
 PROCESS-NAME,tailscale-ipn,DIRECT
 DOMAIN-SUFFIX,tailscale.com,DIRECT
