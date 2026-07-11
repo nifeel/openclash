@@ -1,5 +1,12 @@
 # 内容：OpenAi Bard anthropic
 # 域名关键字匹配
+
+DOMAIN-SUFFIX,iprofiles.apple.com
+DOMAIN-SUFFIX,mdmenrollment.apple.com
+DOMAIN-SUFFIX,deviceenrollment.apple.com
+DOMAIN-SUFFIX,gdmf.apple.com
+DOMAIN-SUFFIX,acmdm.apple.com
+DOMAIN-SUFFIX,albert.apple.com
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,outlook.com
