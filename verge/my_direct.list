@@ -2,7 +2,7 @@
 
 
 #work
-
+DOMAIN-SUFFIX,synyi.cn
 IP-CIDR,47.116.57.201/32,no-resolve
 IP-CIDR,100.64.0.0/10,no-resolve
 IP-CIDR,192.168.133.0/24,no-resolve
