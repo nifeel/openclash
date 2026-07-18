@@ -22,6 +22,7 @@ PROCESS-NAME,appstoreagent,DIRECT
 PROCESS-NAME,tailscaled,DIRECT
 PROCESS-NAME,tailscale-ipn,DIRECT
 PROCESS-NAME,QQMusic,DIRECT
+PROCESS-NAME,Xcode,DIRECT
 PROCESS-NAME-REGEX,(?i)^tailscale(-ipn|d)?(\.exe)?$,DIRECT
 PROCESS-NAME-REGEX,(?i)^(rustdesk|todesk|todesk_service)(\.exe)?$,DIRECT
 PROCESS-NAME-REGEX,(?i)^(wechat|wechatappex|weixin|ftweb|ftnn|wxwork)(\.exe)?$,DIRECT
