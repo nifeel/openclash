@@ -2,42 +2,53 @@
 
 
 #work
-DOMAIN-SUFFIX,synyi.cn
 IP-CIDR,47.116.57.201/32,no-resolve
 IP-CIDR,100.64.0.0/10,no-resolve
-IP-CIDR,192.168.133.0/24,no-resolve
-DOMAIN-SUFFIX,tailscale.com
-DOMAIN-SUFFIX,tailscale.io
 IP-CIDR,27.115.2.182/32,no-resolve
 IP-CIDR,139.196.201.82/32,no-resolve
 DOMAIN-SUFFIX,deltahealth.com.cn
 IP-CIDR,180.167.95.250/32,no-resolve
 IP-CIDR,112.19.9.109/32,no-resolve
 DOMAIN-SUFFIX,yingsheng.xin,no-resolve
-DOMAIN-SUFFIX,bdg-brain.com
-DOMAIN-KEYWORD,mu-kang
-DOMAIN-SUFFIX,hcrm.mu-kang.com
-DOMAIN-SUFFIX,oa.synyi.com
+DOMAIN-SUFFIX,bdg-brain.com,DIRECT
+DOMAIN-SUFFIX,hcrm.mu-kang.com,DIRECT
+DOMAIN-SUFFIX,synyi.com,DIRECT
 
-# MyList
 
-DOMAIN-SUFFIX,right.com.cn
+## cross-platform apps
+
+PROCESS-NAME,softwareupdated,DIRECT
+PROCESS-NAME,appstoreagent,DIRECT
 PROCESS-NAME,tailscaled,DIRECT
 PROCESS-NAME,tailscale-ipn,DIRECT
+PROCESS-NAME,QQMusic,DIRECT
+PROCESS-NAME-REGEX,(?i)^tailscale(-ipn|d)?(\.exe)?$,DIRECT
+PROCESS-NAME-REGEX,(?i)^(rustdesk|todesk|todesk_service)(\.exe)?$,DIRECT
+PROCESS-NAME-REGEX,(?i)^(wechat|wechatappex|weixin|ftweb|ftnn|wxwork)(\.exe)?$,DIRECT
+PROCESS-NAME-REGEX,(?i)^(wemeetapp|wemeet|tencentmeeting)(\.exe)?$,DIRECT
+PROCESS-NAME-REGEX,(?i)^(steam|leagueclient|mobaxterm_personal_23\.0|vmnat|vmnet-nat)(\.exe)?$,DIRECT
+
+
+
+# MyList
+DOMAIN-SUFFIX,tailscale.com,DIRECT
+DOMAIN-SUFFIX,tailscale.io,DIRECT
+DOMAIN-SUFFIX,apple.com,DIRECT
+DOMAIN-SUFFIX,right.com.cn,DIRECT
 DOMAIN-SUFFIX,tailscale.com,DIRECT
 DOMAIN-SUFFIX,tailscale.io,DIRECT
 IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
 IP-CIDR,192.168.133.0/24,DIRECT,no-resolve
-DOMAIN-SUFFIX,tailscale.com
-DOMAIN-SUFFIX,futunn.com
-DOMAIN-SUFFIX,wjx.com
-IP-CIDR,192.168.0.0/32,no-resolve
+DOMAIN-SUFFIX,tailscale.com,DIRECT
+DOMAIN-SUFFIX,futunn.com,DIRECT
+DOMAIN-SUFFIX,wjx.com,DIRECT
+IP-CIDR,10.0.0.0/32,no-resolve
 IP-CIDR,167.233.140.161/32,no-resolve
 DOMAIN-SUFFIX,*.hetzner.com
-DOMAIN-SUFFIX,hetzner.com
-DOMAIN-SUFFIX,llg01.com
-DOMAIN-SUFFIX,todesk.com
-DOMAIN-SUFFIX,duolingo.com
+DOMAIN-SUFFIX,hetzner.com,DIRECT
+DOMAIN-SUFFIX,llg01.com,DIRECT
+DOMAIN-SUFFIX,todesk.com,DIRECT
+DOMAIN-SUFFIX,duolingo.com,DIRECT
 # ibkr
 DOMAIN-SUFFIX,ibkr.com
 
@@ -46,8 +57,6 @@ DOMAIN-SUFFIX,time.windows.com
 DOMAIN-SUFFIX,lanzov.com
 
 
-# 域名关键字匹配
-DOMAIN-KEYWORD,baidu
 
 
 # IP段匹配
