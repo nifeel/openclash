@@ -16,7 +16,6 @@ DOMAIN-SUFFIX,synyi.com,DIRECT
 
 
 ## cross-platform apps
-
 PROCESS-NAME,softwareupdated,DIRECT
 PROCESS-NAME,appstoreagent,DIRECT
 PROCESS-NAME,tailscaled,DIRECT
@@ -32,6 +31,8 @@ PROCESS-NAME-REGEX,(?i)^(steam|leagueclient|mobaxterm_personal_23\.0|vmnat|vmnet
 
 
 # MyList
+DOMAIN-SUFFIX,vrmoo.net,DIRECT
+DOMAIN-SUFFIX,vrmoo.vip,DIRECT
 DOMAIN-SUFFIX,tailscale.com,DIRECT
 DOMAIN-SUFFIX,tailscale.io,DIRECT
 DOMAIN-SUFFIX,apple.com,DIRECT
