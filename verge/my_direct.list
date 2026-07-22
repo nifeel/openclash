@@ -17,6 +17,8 @@ DOMAIN-SUFFIX,synyi.com,DIRECT
 
 
 ## cross-platform apps
+
+PROCESS-NAME-REGEX,(?i).*Feishu.*(\.exe)?$,DIRECT
 PROCESS-NAME-REGEX,(?i).*QuestTool.*(\.exe)?$,DIRECT
 PROCESS-NAME,softwareupdated,DIRECT
 PROCESS-NAME,appstoreagent,DIRECT
