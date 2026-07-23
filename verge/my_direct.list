@@ -15,6 +15,7 @@ DOMAIN-SUFFIX,bdg-brain.com,DIRECT
 DOMAIN-SUFFIX,hcrm.mu-kang.com,DIRECT
 DOMAIN-SUFFIX,synyi.com,DIRECT
 DOMAIN-SUFFIX,synyi.cn,DIRECT
+IP-CIDR,172.16.1.52/32,no-resolve
 
 
 ## cross-platform apps
