@@ -37,6 +37,8 @@ PROCESS-NAME-REGEX,(?i)^(steam|leagueclient|mobaxterm_personal_23\.0|vmnat|vmnet
 
 
 # MyList
+
+DOMAIN-SUFFIX,net,DIRECT
 DOMAIN-SUFFIX,vrmoo.net,DIRECT
 DOMAIN-SUFFIX,vrmoo.vip,DIRECT
 DOMAIN-SUFFIX,tailscale.com,DIRECT
