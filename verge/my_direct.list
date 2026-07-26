@@ -30,7 +30,7 @@ PROCESS-NAME,QQMusic,DIRECT
 PROCESS-NAME,Xcode,DIRECT
 PROCESS-NAME-REGEX,(?i)^tailscale(-ipn|d)?(\.exe)?$,DIRECT
 PROCESS-NAME-REGEX,(?i)^(rustdesk|todesk|todesk_service)(\.exe)?$,DIRECT
-PROCESS-NAME-REGEX,(?i)^(wechat|wechatappex|weixin|ftweb|ftnn|wxwork)(\.exe)?$,DIRECT
+PROCESS-NAME-REGEX,(?i)^(wechat|wechatappex( helper.*)?|weixin|ftweb|ftnn|wxwork)(\.exe)?$,DIRECT
 PROCESS-NAME-REGEX,(?i)^(wemeetapp|wemeet|tencentmeeting)(\.exe)?$,DIRECT
 PROCESS-NAME-REGEX,(?i)^(steam|leagueclient|mobaxterm_personal_23\.0|vmnat|vmnet-nat)(\.exe)?$,DIRECT
 
