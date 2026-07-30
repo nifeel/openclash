@@ -6,7 +6,12 @@ DOMAIN,translate.google.com
 DOMAIN,translate.googleapis.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.com
-
+DOMAIN,www.python.org
+DOMAIN,pypi.org
+DOMAIN,files.pythonhosted.org
+DOMAIN,registry-1.docker.io
+DOMAIN,auth.docker.io
+DOMAIN,production.cloudflare.docker.com
 # 域名后缀匹配
 DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-SUFFIX,ibllc.com
