@@ -19,7 +19,7 @@ IP-CIDR,172.16.1.52/32,no-resolve
 IP-CIDR,36.139.161.35/32,DIRECT,no-resolve
 
 ## cross-platform apps
-
+PROCESS-NAME-REGEX,(?i).*i4Tools.*(\.exe)?$,DIRECT
 PROCESS-NAME-REGEX,(?i).*Feishu.*(\.exe)?$,DIRECT
 PROCESS-NAME-REGEX,(?i).*QuestTool.*(\.exe)?$,DIRECT
 PROCESS-NAME,softwareupdated,DIRECT
