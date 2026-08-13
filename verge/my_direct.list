@@ -21,7 +21,6 @@ IP-CIDR,36.139.161.35/32,DIRECT,no-resolve
 ## cross-platform apps
 
 
-PROCESS-NAME,Cursor.exe,DIRECT
 PROCESS-NAME,抖音 Helper,DIRECT
 PROCESS-NAME,抖音,DIRECT
 PROCESS-NAME,i4Tools,DIRECT
