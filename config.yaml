@@ -1,0 +1,220 @@
+# 共用配置：Clash Verge（桌面）与 OpenClash（路由器）通用
+# ---------------------------------------------------------------
+# 节点来自机场订阅，两端各自“只补链接”：把下面 proxy-providers.airport.url
+# 换成你自己的机场订阅地址即可。
+#   - Clash Verge：导入本配置后，本地把 url 改成真实订阅（不要提交 token）
+#   - OpenClash：作为“配置文件”导入，OpenClash 里填机场订阅或直接改此 url
+# ---------------------------------------------------------------
+# 注意：
+#   1) 需使用 Meta (Mihomo) 内核。
+#   2) 路由器上 PROCESS-NAME / PROCESS-NAME-REGEX 规则不生效（路由器看不到
+#      客户端进程），已用 GEOSITE,CN + GEOIP,CN 兜底，让国内流量自动直连。
+#   3) 端口 / TUN / DNS / external-controller / allow-lan 交给各自客户端管理，
+#      本文件不写，避免桌面与路由器互相冲突。
+
+mode: rule
+
+proxy-providers:
+  airport:
+    type: http
+    url: "REPLACE_WITH_YOUR_SUBSCRIPTION_URL"
+    interval: 86400
+    path: ./providers/airport.yaml
+    additional-prefix: '[订阅1] '
+    exclude-filter: (?i)(剩余|套餐|官网|重置)
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    use:
+      - airport
+    proxies:
+      - DIRECT
+  - name: 🇺🇸 限制区域
+    type: select
+    use:
+      - airport
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 🤖 AI
+    type: select
+    use:
+      - airport
+    exclude-filter: (?i)(香港|Hong\s*kong|HK)
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 👨🏿‍💻 GitHub
+    type: select
+    use:
+      - airport
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 🍀 Google
+    type: select
+    use:
+      - airport
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 📹 YouTube
+    type: select
+    use:
+      - airport
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 🎥 Netflix
+    type: select
+    use:
+      - airport
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 📲 Telegram
+    type: select
+    use:
+      - airport
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 🎵 TikTok
+    type: select
+    use:
+      - airport
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
+  - name: 漏网之鱼
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇸 限制区域
+
+rule-providers:
+  my_direct:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/nifeel/openclash/main/verge/my_direct.list"
+    path: ./ruleset/my_direct.list
+    interval: 86400
+    format: text
+  must_us:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/nifeel/openclash/main/verge/must_us.list"
+    path: ./ruleset/must_us.list
+    interval: 86400
+    format: text
+  proxy_lite:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/nifeel/openclash/main/verge/proxy_lite.list"
+    path: ./ruleset/proxy_lite.list
+    interval: 86400
+    format: text
+  ai:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/nifeel/openclash/main/verge/ai.list"
+    path: ./ruleset/ai.list
+    interval: 86400
+    format: text
+  ban:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/nifeel/openclash/main/verge/ban.list"
+    path: ./ruleset/ban.list
+    interval: 86400
+    format: text
+  github:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list"
+    path: ./ruleset/github.list
+    interval: 86400
+    format: text
+  google:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list"
+    path: ./ruleset/google.list
+    interval: 86400
+    format: text
+  youtube:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+    path: ./ruleset/youtube.list
+    interval: 86400
+    format: text
+  netflix:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list"
+    path: ./ruleset/netflix.list
+    interval: 86400
+    format: text
+  telegram:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list"
+    path: ./ruleset/telegram.list
+    interval: 86400
+    format: text
+  tiktok:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.list"
+    path: ./ruleset/tiktok.list
+    interval: 86400
+    format: text
+
+rules:
+  - DOMAIN-SUFFIX,microsoft.com,🚀 节点选择
+  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
+  - DOMAIN-SUFFIX,yahoo.com,🚀 节点选择
+  # 以下 PROCESS-NAME 规则仅在桌面 Verge 生效；路由器 OpenClash 会忽略它们
+  - PROCESS-NAME,MobaXterm_Personal_23.0.exe,DIRECT
+  - PROCESS-NAME,tailscale.exe,DIRECT
+  - PROCESS-NAME,tailscale-ipn.exe,DIRECT
+  - PROCESS-NAME,vmnat.exe,DIRECT
+  - PROCESS-NAME,tailscaled.exe,DIRECT
+  - PROCESS-NAME,RustDesk.exe,DIRECT
+  - PROCESS-NAME,FTWeb.exe,DIRECT
+  - PROCESS-NAME,Weixin.exe,DIRECT
+  - PROCESS-NAME,WeChatAppEx.exe,DIRECT
+  - PROCESS-NAME,WeChat.exe,DIRECT
+  - PROCESS-NAME,FTNN.exe,DIRECT
+  - PROCESS-NAME,WeMeetApp.exe,DIRECT
+  - PROCESS-NAME,steam.exe,DIRECT
+  - PROCESS-NAME,WXWork.exe,DIRECT
+  - PROCESS-NAME,LeagueClient.exe,DIRECT
+  - PROCESS-NAME,todesk.exe,DIRECT
+  - RULE-SET,my_direct,DIRECT
+  - RULE-SET,must_us,🇺🇸 限制区域
+  - RULE-SET,proxy_lite,🚀 节点选择
+  - RULE-SET,ai,🤖 AI
+  - RULE-SET,ban,REJECT
+  - DOMAIN,translate.google.com,🍀 Google
+  - DOMAIN,translate.googleapis.com,🍀 Google
+  - DOMAIN-SUFFIX,googleapis.com,🍀 Google
+  - DOMAIN-SUFFIX,gstatic.com,🍀 Google
+  - RULE-SET,github,👨🏿‍💻 GitHub
+  - RULE-SET,google,🍀 Google
+  - RULE-SET,youtube,📹 YouTube
+  - RULE-SET,netflix,🎥 Netflix
+  - RULE-SET,telegram,📲 Telegram
+  - RULE-SET,tiktok,🎵 TikTok
+  # 兜底：国内域名/IP 直连（路由器上替代失效的进程名规则）
+  - GEOSITE,CN,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  - MATCH,漏网之鱼
