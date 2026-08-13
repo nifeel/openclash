@@ -197,37 +197,15 @@ rule-providers:
     interval: 86400
     format: text
 
+# 具体规则都写在各自的 list 里（见 rule-providers），yaml 只做 RULE-SET 引用。
+# - 进程直连(微信/tailscale/steam/todesk 等) 和国内直连域名 => verge/my_direct.list
+# - 强制走代理的域名(microsoft/google/gstatic/yahoo 等)             => verge/proxy_lite.list
 rules:
-  - DOMAIN-SUFFIX,microsoft.com,🚀 节点选择
-  - DOMAIN-SUFFIX,google.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,yahoo.com,🚀 节点选择
-  # 以下 PROCESS-NAME 规则仅在桌面 Verge 生效；路由器 OpenClash 会忽略它们
-  - PROCESS-NAME,MobaXterm_Personal_23.0.exe,DIRECT
-  - PROCESS-NAME,tailscale.exe,DIRECT
-  - PROCESS-NAME,tailscale-ipn.exe,DIRECT
-  - PROCESS-NAME,vmnat.exe,DIRECT
-  - PROCESS-NAME,tailscaled.exe,DIRECT
-  - PROCESS-NAME,RustDesk.exe,DIRECT
-  - PROCESS-NAME,FTWeb.exe,DIRECT
-  - PROCESS-NAME,Weixin.exe,DIRECT
-  - PROCESS-NAME,WeChatAppEx.exe,DIRECT
-  - PROCESS-NAME,WeChat.exe,DIRECT
-  - PROCESS-NAME,FTNN.exe,DIRECT
-  - PROCESS-NAME,WeMeetApp.exe,DIRECT
-  - PROCESS-NAME,steam.exe,DIRECT
-  - PROCESS-NAME,WXWork.exe,DIRECT
-  - PROCESS-NAME,LeagueClient.exe,DIRECT
-  - PROCESS-NAME,todesk.exe,DIRECT
   - RULE-SET,my_direct,DIRECT
   - RULE-SET,must_us,🇺🇸 限制区域
   - RULE-SET,proxy_lite,🚀 节点选择
   - RULE-SET,ai,🤖 AI
   - RULE-SET,ban,REJECT
-  - DOMAIN,translate.google.com,🍀 Google
-  - DOMAIN,translate.googleapis.com,🍀 Google
-  - DOMAIN-SUFFIX,googleapis.com,🍀 Google
-  - DOMAIN-SUFFIX,gstatic.com,🍀 Google
   - RULE-SET,github,👨🏿‍💻 GitHub
   - RULE-SET,google,🍀 Google
   - RULE-SET,youtube,📹 YouTube
