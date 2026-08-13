@@ -1,26 +1,37 @@
 # 共用配置：Clash Verge（桌面）与 OpenClash（路由器）通用
 # ---------------------------------------------------------------
-# 节点来自机场订阅，两端各自“只补链接”：把下面 proxy-providers.airport.url
-# 换成你自己的机场订阅地址即可。
-#   - Clash Verge：导入本配置后，本地把 url 改成真实订阅（不要提交 token）
-#   - OpenClash：作为“配置文件”导入，OpenClash 里填机场订阅或直接改此 url
+# 多机场订阅：下面 proxy-providers 里每个 airportN 对应一个机场。
+# 两端各自“只补链接”——把每个 airportN 的 url 换成你自己的订阅地址即可。
+# 不含 token，可放公开仓库；真实订阅地址只在本地填写，不要提交回仓库。
+#
+# 想加更多机场：复制一段 airportN，改名字（airport3、airport4…）和 url、
+# additional-prefix，并把它加进下面每个节点组的 use: 列表即可。
 # ---------------------------------------------------------------
 # 注意：
 #   1) 需使用 Meta (Mihomo) 内核。
-#   2) 路由器上 PROCESS-NAME / PROCESS-NAME-REGEX 规则不生效（路由器看不到
-#      客户端进程），已用 GEOSITE,CN + GEOIP,CN 兜底，让国内流量自动直连。
-#   3) 端口 / TUN / DNS / external-controller / allow-lan 交给各自客户端管理，
-#      本文件不写，避免桌面与路由器互相冲突。
+#   2) 路由器上 PROCESS-NAME 规则不生效，已用 GEOSITE,CN + GEOIP,CN 兜底。
+#   3) 端口 / TUN / DNS / external-controller / allow-lan 交给各自客户端管理。
 
 mode: rule
 
 proxy-providers:
-  airport:
+  airport1:
     type: http
-    url: "REPLACE_WITH_YOUR_SUBSCRIPTION_URL"
+    url: "REPLACE_WITH_SUBSCRIPTION_URL_1"
     interval: 86400
-    path: ./providers/airport.yaml
+    path: ./providers/airport1.yaml
     additional-prefix: '[订阅1] '
+    exclude-filter: (?i)(剩余|套餐|官网|重置)
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  airport2:
+    type: http
+    url: "REPLACE_WITH_SUBSCRIPTION_URL_2"
+    interval: 86400
+    path: ./providers/airport2.yaml
+    additional-prefix: '[订阅2] '
     exclude-filter: (?i)(剩余|套餐|官网|重置)
     health-check:
       enable: true
@@ -31,20 +42,23 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     proxies:
       - DIRECT
   - name: 🇺🇸 限制区域
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     proxies:
       - 🚀 节点选择
       - DIRECT
   - name: 🤖 AI
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     exclude-filter: (?i)(香港|Hong\s*kong|HK)
     proxies:
       - 🚀 节点选择
@@ -52,42 +66,48 @@ proxy-groups:
   - name: 👨🏿‍💻 GitHub
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     proxies:
       - 🚀 节点选择
       - DIRECT
   - name: 🍀 Google
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     proxies:
       - 🚀 节点选择
       - DIRECT
   - name: 📹 YouTube
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     proxies:
       - 🚀 节点选择
       - DIRECT
   - name: 🎥 Netflix
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     proxies:
       - 🚀 节点选择
       - DIRECT
   - name: 📲 Telegram
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     proxies:
       - 🚀 节点选择
       - DIRECT
   - name: 🎵 TikTok
     type: select
     use:
-      - airport
+      - airport1
+      - airport2
     proxies:
       - 🚀 节点选择
       - DIRECT
