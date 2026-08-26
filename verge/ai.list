@@ -74,6 +74,12 @@ DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,runwayml.com
 
 # Cursor / Windsurf / Codeium
+# 进程名仅桌面端（Clash Verge TUN）生效，路由器会忽略
+PROCESS-NAME,Cursor
+PROCESS-NAME,Cursor.exe
+PROCESS-NAME,cursor
+PROCESS-NAME-REGEX,(?i)^cursor( helper.*| nightly)?(\.exe)?$
+PROCESS-NAME-REGEX,(?i)^cursor-agent(\.exe)?$
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor-cdn.com
