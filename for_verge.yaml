@@ -1,6 +1,7 @@
   rules:
     - RULE-SET,my_direct,DIRECT
     - RULE-SET,ban,REJECT
+    - RULE-SET,ads,REJECT
     - RULE-SET,must_cn,🇺🇸 限制区域
     - RULE-SET,ai,🤖 AI
     - RULE-SET,github,👨🏿‍💻 GitHub
@@ -43,6 +44,12 @@
       type: http
       behavior: classical
       url: "https://raw.githubusercontent.com/nifeel/openclash/main/ban.list"
+      interval: 86400
+      format: text
+    ads:
+      type: http
+      behavior: classical
+      url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.list"
       interval: 86400
       format: text
     github:
