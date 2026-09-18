@@ -1,7 +1,6 @@
   rules:
     - RULE-SET,my_direct,DIRECT
     - RULE-SET,ban,REJECT
-    - RULE-SET,ads,REJECT
     - RULE-SET,must_cn,🇺🇸 限制区域
     - RULE-SET,ai,🤖 AI
     - RULE-SET,github,👨🏿‍💻 GitHub
@@ -11,6 +10,7 @@
     - RULE-SET,telegram,📲 Telegram
     - RULE-SET,tiktok,🎵 TikTok
     - RULE-SET,proxy_lite,🚀 节点选择
+    - RULE-SET,ads,REJECT
     - GEOSITE,CN,DIRECT
     - GEOIP,CN,DIRECT,no-resolve
     - MATCH,🚀 节点选择

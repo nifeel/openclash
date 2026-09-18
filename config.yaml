@@ -205,13 +205,12 @@ rule-providers:
     format: text
 
 # 具体规则都写在各自的 list 里（见 rule-providers），yaml 只做 RULE-SET 引用。
-# 顺序：直连例外 -> 屏蔽/广告 -> 必须美国 -> AI -> 站点分组 -> 其余强制代理 -> 国内兜底
+# 顺序：直连例外 -> 屏蔽 -> 必须美国 -> AI -> 站点分组 -> 其余强制代理 -> 广告拦截 -> 国内兜底
 # - 进程直连(微信/tailscale/steam/todesk 等) 和国内直连域名 => verge/my_direct.list
 # - 强制走代理的补充域名(microsoft/gstatic/yahoo 等) => verge/proxy_lite.list
 rules:
   - RULE-SET,my_direct,DIRECT
   - RULE-SET,ban,REJECT
-  - RULE-SET,ads,REJECT
   - RULE-SET,must_us,🇺🇸 限制区域
   - RULE-SET,ai,🤖 AI
   - RULE-SET,github,👨🏿‍💻 GitHub
@@ -221,6 +220,7 @@ rules:
   - RULE-SET,telegram,📲 Telegram
   - RULE-SET,tiktok,🎵 TikTok
   - RULE-SET,proxy_lite,🚀 节点选择
+  - RULE-SET,ads,REJECT
   - GEOSITE,CN,DIRECT
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,漏网之鱼
