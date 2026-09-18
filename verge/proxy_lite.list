@@ -1,6 +1,6 @@
 # 自定义代理列表
+# google.com 整域不要写在这里，否则会盖住 AI / Google 分组
 DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,x1080x.com
 DOMAIN-SUFFIX,ccgga.me
@@ -15,9 +15,13 @@ DOMAIN,files.pythonhosted.org
 DOMAIN,registry-1.docker.io
 DOMAIN,auth.docker.io
 DOMAIN,production.cloudflare.docker.com
+
 # 域名后缀匹配
 DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-SUFFIX,ibllc.com
+DOMAIN-SUFFIX,ibkr.com
+DOMAIN-SUFFIX,duolingo.com
+
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
 

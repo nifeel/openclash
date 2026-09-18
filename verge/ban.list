@@ -1,22 +1,7 @@
-# 内容：OpenAi Bard anthropic
-# 域名关键字匹配
+# 只拦 Apple MDM / 设备监管，避免整站 apple.com、microsoft.com 误伤
 DOMAIN-SUFFIX,iprofiles.apple.com
 DOMAIN-SUFFIX,mdmenrollment.apple.com
 DOMAIN-SUFFIX,deviceenrollment.apple.com
 DOMAIN-SUFFIX,gdmf.apple.com
 DOMAIN-SUFFIX,acmdm.apple.com
 DOMAIN-SUFFIX,albert.apple.com
-DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,outlook.com
-DOMAIN-SUFFIX,office.com
-DOMAIN-SUFFIX,office365.com
-DOMAIN-SUFFIX,microsoftonline.com
-DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,xbox.com
-DOMAIN-SUFFIX,azure.com
-# DOMAIN-KEYWORD,openai
-# DOMAIN-KEYWORD,anthropic
-
-# 域名后缀匹配
-# DOMAIN-SUFFIX,perplexity.ai

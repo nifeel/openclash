@@ -24,8 +24,8 @@ proxy-providers:
     exclude-filter: (?i)(剩余|套餐|官网|重置)
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
+      url: https://www.gstatic.com/generate_204
+      interval: 1800
   airport2:
     type: http
     url: "REPLACE_WITH_SUBSCRIPTION_URL_2"
@@ -35,8 +35,8 @@ proxy-providers:
     exclude-filter: (?i)(剩余|套餐|官网|重置)
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 300
+      url: https://www.gstatic.com/generate_204
+      interval: 1800
 
 proxy-groups:
   - name: 🚀 节点选择
@@ -198,21 +198,21 @@ rule-providers:
     format: text
 
 # 具体规则都写在各自的 list 里（见 rule-providers），yaml 只做 RULE-SET 引用。
+# 顺序：直连例外 -> 屏蔽 -> 必须美国 -> AI -> 站点分组 -> 其余强制代理 -> 国内兜底
 # - 进程直连(微信/tailscale/steam/todesk 等) 和国内直连域名 => verge/my_direct.list
-# - 强制走代理的域名(microsoft/google/gstatic/yahoo 等)             => verge/proxy_lite.list
+# - 强制走代理的补充域名(microsoft/gstatic/yahoo 等) => verge/proxy_lite.list
 rules:
   - RULE-SET,my_direct,DIRECT
-  - RULE-SET,must_us,🇺🇸 限制区域
-  - RULE-SET,proxy_lite,🚀 节点选择
-  - RULE-SET,ai,🤖 AI
   - RULE-SET,ban,REJECT
+  - RULE-SET,must_us,🇺🇸 限制区域
+  - RULE-SET,ai,🤖 AI
   - RULE-SET,github,👨🏿‍💻 GitHub
   - RULE-SET,google,🍀 Google
   - RULE-SET,youtube,📹 YouTube
   - RULE-SET,netflix,🎥 Netflix
   - RULE-SET,telegram,📲 Telegram
   - RULE-SET,tiktok,🎵 TikTok
-  # 兜底：国内域名/IP 直连（路由器上替代失效的进程名规则）
+  - RULE-SET,proxy_lite,🚀 节点选择
   - GEOSITE,CN,DIRECT
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,漏网之鱼
