@@ -1,5 +1,13 @@
 # 自定义代理列表
 # google.com 整域不要写在这里，否则会盖住 AI / Google 分组
+# X / Twitter 视频走 twimg，不写进规则就会掉进漏网之鱼
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twimg.org
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,yahoo.com
 DOMAIN-SUFFIX,x1080x.com
