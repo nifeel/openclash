@@ -23,6 +23,9 @@ IP-CIDR,36.139.161.35/32,no-resolve
 
 PROCESS-NAME,抖音 Helper
 PROCESS-NAME,抖音
+PROCESS-NAME,Douyin
+PROCESS-NAME,Douyin Helper
+PROCESS-NAME-REGEX,(?i)^(douyin|aweme)( helper.*)?$
 PROCESS-NAME,i4Tools
 PROCESS-NAME-REGEX,(?i).*i4Tools.*(\.exe)?$
 PROCESS-NAME-REGEX,(?i).*Feishu.*(\.exe)?$
@@ -177,6 +180,7 @@ DOMAIN-SUFFIX,bytetos.com
 DOMAIN-SUFFIX,bytexservice.com
 DOMAIN-SUFFIX,douyin.com
 DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,douyinliving.com
 DOMAIN-SUFFIX,douyinpic.com
 DOMAIN-SUFFIX,douyinstatic.com
 DOMAIN-SUFFIX,douyinvod.com
