@@ -19,7 +19,6 @@ IP-CIDR,172.16.1.52/32,no-resolve
 IP-CIDR,36.139.161.35/32,no-resolve
 
 ## cross-platform apps
-DOMAIN-SUFFIX,decrypt.day
 PROCESS-NAME,抖音 Helper
 PROCESS-NAME,抖音
 PROCESS-NAME,Douyin

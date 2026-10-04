@@ -1,6 +1,8 @@
 # 自定义代理列表
 # google.com 整域不要写在这里，否则会盖住 AI / Google 分组
 # X / Twitter 视频走 twimg，不写进规则就会掉进漏网之鱼
+# decrypt.day 直连会被 Cloudflare 按国内 IP 返回 451
+DOMAIN-SUFFIX,decrypt.day
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,twitter.com
