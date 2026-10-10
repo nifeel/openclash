@@ -39,6 +39,15 @@ PROCESS-NAME-REGEX,(?i)^(rustdesk|todesk|todesk_service)(\.exe)?$
 PROCESS-NAME-REGEX,(?i)^(wechat|wechatappex( helper.*)?|weixin|ftweb|ftnn|wxwork)(\.exe)?$
 PROCESS-NAME-REGEX,(?i)^(wemeetapp|wemeet|tencentmeeting)(\.exe)?$
 PROCESS-NAME-REGEX,(?i)^(steam|leagueclient|mobaxterm_personal_23\.0|vmnat|vmnet-nat)(\.exe)?$
+PROCESS-NAME,UURemote
+PROCESS-NAME,UURemoteService
+PROCESS-NAME,UURemoteDaemon
+PROCESS-NAME,UURemoteHelper
+PROCESS-NAME,UURemoteServer
+PROCESS-NAME,UURemoteUpdater
+PROCESS-NAME,uuyc-cli
+PROCESS-NAME,uuyc-mux
+PROCESS-NAME-REGEX,(?i)^(uuremote(service|daemon|helper|server|updater)?|uuyc-(cli|mux))(\.exe)?$
 
 
 # MyList
