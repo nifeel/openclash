@@ -19,6 +19,7 @@ IP-CIDR,172.16.1.52/32,no-resolve
 IP-CIDR,36.139.161.35/32,no-resolve
 
 ## cross-platform apps
+
 PROCESS-NAME,抖音 Helper
 PROCESS-NAME,抖音
 PROCESS-NAME,Douyin
@@ -51,6 +52,8 @@ PROCESS-NAME-REGEX,(?i)^(uuremote(service|daemon|helper|server|updater)?|uuyc-(c
 
 
 # MyList
+	
+DOMAIN-SUFFIX,jianying.com
 DOMAIN-SUFFIX,pxb7.com
 DOMAIN-SUFFIX,vrmoo.net
 DOMAIN-SUFFIX,vrmoo.vip
