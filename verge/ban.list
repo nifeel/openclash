@@ -1,7 +1,26 @@
-# 只拦 Apple MDM / 设备监管，避免整站 apple.com、microsoft.com 误伤
+# Mihomo / Clash classical text 规则集，由主配置 RULE-SET,ban,REJECT 指定策略。
+# 仅使用域名规则，便于电脑、手机及路由器复用；本文件不填写 DIRECT/REJECT。
+# 优先于可能命中的直连/代理规则引用。域名拦截不能关闭 GPS 或阻止 IP 定位。
+# Apple 设备管理相关：保留原有规则。
+# gdmf.apple.com 同时用于系统资源目录，可能影响 Xcode 组件下载及系统更新。
+# albert.apple.com 涉及设备激活，相关操作异常时需临时放行。
 DOMAIN-SUFFIX,iprofiles.apple.com
 DOMAIN-SUFFIX,mdmenrollment.apple.com
 DOMAIN-SUFFIX,deviceenrollment.apple.com
 DOMAIN-SUFFIX,gdmf.apple.com
 DOMAIN-SUFFIX,acmdm.apple.com
 DOMAIN-SUFFIX,albert.apple.com
+# Apple 联网定位：可能影响地图、天气等应用的自动定位。
+DOMAIN-SUFFIX,gs-loc.apple.com
+DOMAIN-SUFFIX,gs-loc-cn.apple.com
+# 高德定位 SDK：同时覆盖 dualstack 等子域；可能影响使用该 SDK 的第三方 App 定位。
+DOMAIN-SUFFIX,apilocate.amap.com
+# 腾讯定位 SDK：不同系统/SDK 版本可能使用其他端点，需按连接记录补充。
+DOMAIN,lbs.map.qq.com
+DOMAIN,lbssp.map.qq.com
+# Google 官方 Geolocation API 使用共享域名的 /geolocation/v1/geolocate 路径。
+# classical 域名规则不能按 HTTPS 路径区分；默认不拦整个 Google API 域名。
+# 如接受其他 Google API 一并受影响，可手工取消下一行注释：
+# DOMAIN,www.googleapis.com
+# 不整体屏蔽 amap.com、map.qq.com、googleapis.com 或 ls.apple.com，避免扩大地图功能影响。
+# 上述定位端点不保证覆盖所有版本；已缓存位置、GPS、IP 和服务端定位不在拦截保证范围内。
