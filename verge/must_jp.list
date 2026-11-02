@@ -1,0 +1,122 @@
+# 走日本节点服务列表 (YouTube, Polymarket, 韩国网络阻断站点)
+# 后期如需增加走日本节点的服务，直接在本文件末尾添加即可，客户端会自动更新拉取。
+# 格式规范：
+#   DOMAIN-SUFFIX,example.com  (匹配域名及其子域名)
+#   DOMAIN-KEYWORD,keyword     (关键字匹配)
+#   DOMAIN,exact.domain.com    (精确域名匹配)
+
+# ==========================================
+# 1. 特别指定服务 (YouTube & Polymarket)
+# ==========================================
+DOMAIN-KEYWORD,youtube
+DOMAIN-KEYWORD,polymarket
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,youtubei.googleapis.com
+DOMAIN-SUFFIX,yt3.ggpht.com
+DOMAIN-SUFFIX,polymarket.com
+DOMAIN-SUFFIX,polymarket.market
+
+# ==========================================
+# 2. 韩国官方审查与警示重定向 (KCSC)
+# ==========================================
+DOMAIN-SUFFIX,warning.or.kr
+DOMAIN-SUFFIX,kcsc.or.kr
+DOMAIN-SUFFIX,police.go.kr
+
+# ==========================================
+# 3. 韩国运营商网络阻断站点 (成人/色情/同人)
+# ==========================================
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,xvideos.com
+DOMAIN-SUFFIX,xnxx.com
+DOMAIN-SUFFIX,xhamster.com
+DOMAIN-SUFFIX,redtube.com
+DOMAIN-SUFFIX,youporn.com
+DOMAIN-SUFFIX,spankbang.com
+DOMAIN-SUFFIX,eporner.com
+DOMAIN-SUFFIX,tube8.com
+DOMAIN-SUFFIX,beeg.com
+DOMAIN-SUFFIX,txxx.com
+DOMAIN-SUFFIX,hclips.com
+DOMAIN-SUFFIX,voyeurhit.com
+DOMAIN-SUFFIX,missav.com
+DOMAIN-SUFFIX,missav.ai
+DOMAIN-SUFFIX,missav.ws
+DOMAIN-SUFFIX,jable.tv
+DOMAIN-SUFFIX,hanime1.me
+DOMAIN-SUFFIX,hanime.tv
+DOMAIN-SUFFIX,dmm.co.jp
+DOMAIN-SUFFIX,fanza.com
+DOMAIN-SUFFIX,javdb.com
+DOMAIN-SUFFIX,javbus.com
+DOMAIN-SUFFIX,7mmtv.tv
+DOMAIN-SUFFIX,avgle.com
+DOMAIN-SUFFIX,netflav.com
+DOMAIN-SUFFIX,supjav.com
+DOMAIN-SUFFIX,tktube.com
+DOMAIN-SUFFIX,e-hentai.org
+DOMAIN-SUFFIX,exhentai.org
+DOMAIN-SUFFIX,nhentai.net
+DOMAIN-SUFFIX,hitomi.la
+DOMAIN-SUFFIX,tsumino.com
+DOMAIN-SUFFIX,pururin.io
+DOMAIN-SUFFIX,asmhentai.com
+DOMAIN-SUFFIX,dlsite.com
+DOMAIN-SUFFIX,dlsite.jp
+DOMAIN-SUFFIX,chaturbate.com
+DOMAIN-SUFFIX,stripchat.com
+DOMAIN-SUFFIX,bongacams.com
+DOMAIN-SUFFIX,cam4.com
+DOMAIN-SUFFIX,livejasmin.com
+DOMAIN-SUFFIX,myfreecams.com
+DOMAIN-SUFFIX,onlyfans.com
+DOMAIN-SUFFIX,fansly.com
+
+# ==========================================
+# 4. 线上博彩 / 赌场
+# ==========================================
+DOMAIN-SUFFIX,bet365.com
+DOMAIN-SUFFIX,pokerstars.com
+DOMAIN-SUFFIX,1xbet.com
+DOMAIN-SUFFIX,stake.com
+DOMAIN-SUFFIX,bwin.com
+DOMAIN-SUFFIX,unibet.com
+DOMAIN-SUFFIX,williamhill.com
+DOMAIN-SUFFIX,888casino.com
+DOMAIN-SUFFIX,888poker.com
+DOMAIN-SUFFIX,bovada.lv
+DOMAIN-SUFFIX,pinnacle.com
+DOMAIN-SUFFIX,betfair.com
+
+# ==========================================
+# 5. 盗版资源 / BT种子
+# ==========================================
+DOMAIN-SUFFIX,thepiratebay.org
+DOMAIN-SUFFIX,1337x.to
+DOMAIN-SUFFIX,nyaa.si
+DOMAIN-SUFFIX,rarbg.to
+DOMAIN-SUFFIX,yts.mx
+DOMAIN-SUFFIX,fitgirl-repacks.site
+
+# ==========================================
+# 6. 未在韩合规登记的部分海外加密货币平台
+# ==========================================
+DOMAIN-SUFFIX,kucoin.com
+DOMAIN-SUFFIX,mexc.com
+DOMAIN-SUFFIX,poloniex.com
+DOMAIN-SUFFIX,phemex.com
+DOMAIN-SUFFIX,coinex.com
+DOMAIN-SUFFIX,coinw.com
+DOMAIN-SUFFIX,btcc.com
+DOMAIN-SUFFIX,bitrue.com
+DOMAIN-SUFFIX,zb.com
+
+# ==========================================
+# 7. Twitch
+# ==========================================
+DOMAIN-SUFFIX,twitch.tv
+DOMAIN-SUFFIX,ttvnw.net
+DOMAIN-SUFFIX,jtvnw.net

@@ -54,6 +54,14 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - DIRECT
+  - name: 🇯🇵 走日本
+    type: select
+    use:
+      - airport1
+      - airport2
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
   - name: 🤖 AI
     type: select
     use:
@@ -133,6 +141,13 @@ rule-providers:
     path: ./ruleset/must_us.list
     interval: 86400
     format: text
+  must_jp:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/nifeel/openclash/main/verge/must_jp.list"
+    path: ./ruleset/must_jp.list
+    interval: 86400
+    format: text
   proxy_lite:
     type: http
     behavior: classical
@@ -205,6 +220,7 @@ rules:
   - RULE-SET,my_direct,DIRECT
   - RULE-SET,ban,REJECT
   - RULE-SET,must_us,🇺🇸 限制区域
+  - RULE-SET,must_jp,🇯🇵 走日本
   - RULE-SET,ai,🤖 AI
   - RULE-SET,github,👨🏿‍💻 GitHub
   - RULE-SET,google,🍀 Google
