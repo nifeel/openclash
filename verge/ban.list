@@ -2,6 +2,84 @@
 # 仅使用域名规则，便于电脑、手机及路由器复用；本文件不填写 DIRECT/REJECT。
 # 优先于可能命中的直连/代理规则引用。域名拦截不能关闭 GPS 或阻止 IP 定位。
 
+# ==============================================================================
+# 1. 国产安卓设备与厂商系统级遥测 (OEM Telemetry & Data Collection)
+# 针对系统预装应用、内置广告服务、硬件/IMEI/应用列表上报进行全量阻断
+# ==============================================================================
+
+# 联想 / 拯救者 / ZUI (Lenovo Legion & ZUI)
+DOMAIN-SUFFIX,lepus.lenovo.com
+DOMAIN-SUFFIX,push.lenovo.com
+DOMAIN-SUFFIX,uds.lenovo.com
+DOMAIN-SUFFIX,tracking.lenovo.com
+DOMAIN-SUFFIX,data.lenovo.com
+DOMAIN-SUFFIX,feedback.lenovo.com
+DOMAIN-SUFFIX,api.zui.com
+DOMAIN-SUFFIX,stat.zui.com
+
+# 小米 / 红米 (Xiaomi / MIUI / HyperOS)
+DOMAIN-SUFFIX,tracking.miui.com
+DOMAIN-SUFFIX,data.mistat.xiaomi.com
+DOMAIN-SUFFIX,ad.xiaomi.com
+DOMAIN-SUFFIX,admob.xiaomi.com
+DOMAIN-SUFFIX,analytics.xiaomi.com
+
+# 华为 / 荣耀 (Huawei / Honor)
+DOMAIN-SUFFIX,metrics.data.hicloud.com
+DOMAIN-SUFFIX,logservice.hicloud.com
+DOMAIN-SUFFIX,logservice1.hicloud.com
+DOMAIN-SUFFIX,metrics2.data.hicloud.com
+
+# OPPO / 一加 / realme (ColorOS)
+DOMAIN-SUFFIX,tracking.oppomobile.com
+DOMAIN-SUFFIX,data.oppomobile.com
+DOMAIN-SUFFIX,ads.oppomobile.com
+DOMAIN-SUFFIX,bdapi.coloros.com
+
+# vivo / iQOO (OriginOS)
+DOMAIN-SUFFIX,data.vivo.com.cn
+DOMAIN-SUFFIX,adx.vivo.com.cn
+DOMAIN-SUFFIX,stnets.vivo.com.cn
+
+# ==============================================================================
+# 2. 国产通用第三方大数据采集、设备画像与行为追踪 SDK
+# 拦截 App 内置的大数据统计、设备指纹及隐私归因回传
+# ==============================================================================
+
+# 友盟 (Umeng / CNZZ)
+DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,umengcloud.com
+DOMAIN-SUFFIX,umsns.com
+DOMAIN-SUFFIX,cnzz.com
+
+# TalkingData (腾云天下)
+DOMAIN-SUFFIX,talkingdata.com
+DOMAIN-SUFFIX,talkingdata.net
+DOMAIN-SUFFIX,cpatrk.net
+
+# 极光推送与数据分析 (JPush / Jiguang)
+DOMAIN-SUFFIX,jpush.cn
+DOMAIN-SUFFIX,jiguang.cn
+
+# 个推 / 每日互动 (GeTui / Igexin)
+DOMAIN-SUFFIX,getui.com
+DOMAIN-SUFFIX,igexin.com
+DOMAIN-SUFFIX,gepush.com
+
+# 百度移动统计与推广
+DOMAIN-SUFFIX,hm.baidu.com
+DOMAIN-SUFFIX,pos.baidu.com
+DOMAIN-SUFFIX,mobads.baidu.com
+DOMAIN-SUFFIX,mobads-logs.baidu.com
+
+# 腾讯灯塔统计 (Beacon 仅限行为与设备上报，不影响游戏及通信)
+DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,oth.str.mdt.qq.com
+
+# ==============================================================================
+# 3. 设备管理与网络定位限制 (Apple / 高德 / 腾讯定位 SDK)
+# ==============================================================================
+
 # Apple 设备管理相关：保留原有规则。
 # gdmf.apple.com 同时用于系统资源目录，可能影响 Xcode 组件下载及系统更新。
 # albert.apple.com 涉及设备激活，相关操作异常时需临时放行。
@@ -30,3 +108,4 @@ DOMAIN,lbssp.map.qq.com
 
 # 不整体屏蔽 amap.com、map.qq.com、googleapis.com 或 ls.apple.com，避免扩大地图功能影响。
 # 上述定位端点不保证覆盖所有版本；已缓存位置、GPS、IP 和服务端定位不在拦截保证范围内。
+
