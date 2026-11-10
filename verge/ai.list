@@ -72,7 +72,10 @@ DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,runwayml.com
 
 # Meta Muse
+DOMAIN-KEYWORD,muse.ai
+DOMAIN-KEYWORD,museai
 DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,museai.com
 
 # Cursor / Windsurf / Codeium
 # 进程名仅桌面端（Clash Verge TUN）生效，路由器会忽略

@@ -120,3 +120,12 @@ DOMAIN-SUFFIX,zb.com
 DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,jtvnw.net
+
+# ==========================================
+# 8. Muse AI (Meta Muse)
+# ==========================================
+DOMAIN-KEYWORD,muse.ai
+DOMAIN-KEYWORD,museai
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,museai.com
+
