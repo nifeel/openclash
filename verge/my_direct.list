@@ -2,6 +2,7 @@
 DOMAIN,gdmf.apple.com,DIRECT
 
 #work
+IP-CIDR,43.166.23.12/32,no-resolve
 IP-CIDR,43.133.91.15/32,no-resolve
 IP-CIDR,36.140.102.229/32,no-resolve
 IP-CIDR,47.116.57.201/32,no-resolve
