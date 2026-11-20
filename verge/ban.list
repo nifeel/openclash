@@ -191,15 +191,23 @@ DOMAIN-SUFFIX,getui.com
 DOMAIN-SUFFIX,igexin.com
 DOMAIN-SUFFIX,gepush.com
 
-# 百度移动统计与推广
+# 百度移动统计、推广与 Sofire 设备指纹 SDK (含百度输入法后台上报)
 DOMAIN-SUFFIX,hm.baidu.com
 DOMAIN-SUFFIX,pos.baidu.com
 DOMAIN-SUFFIX,mobads.baidu.com
 DOMAIN-SUFFIX,mobads-logs.baidu.com
+DOMAIN-SUFFIX,sofire.baidu.com
 
-# 腾讯灯塔统计 (Beacon 仅限行为与设备上报，不影响游戏及通信)
+# 腾讯灯塔统计 & Bugly 崩溃/设备信息上报 (不影响游戏及通信)
 DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,oth.str.mdt.qq.com
+DOMAIN-SUFFIX,android.bugly.qq.com
+DOMAIN-SUFFIX,ios.bugly.qq.com
+DOMAIN-SUFFIX,rqd.uu.qq.com
+DOMAIN-SUFFIX,astat.bugly.qcloud.com
+
+# 360 加固保后台统计上报
+DOMAIN-SUFFIX,hu.jiagu.360.cn
 
 # ==============================================================================
 # 3. 设备管理与网络定位限制 (Apple / 高德 / 腾讯定位 SDK)
