@@ -49,7 +49,8 @@ DOMAIN-SUFFIX,mdp-appconf-in.heytapdl.com
 DOMAIN-SUFFIX,mdp-appconf-cn.heytapdownload.com
 DOMAIN-SUFFIX,mdp-appconf.heytapdownload.com
 DOMAIN-SUFFIX,appconf.heytapdownload.com
-# 3) PostmanService / OLC / LogKit / EAP 售后诊断日志投递
+# 3) PostmanService / OLC / LogKit / EAP 售后诊断日志投递 & 安装器云端扫描上报
+DOMAIN-SUFFIX,api.open.oppomobile.com
 DOMAIN-SUFFIX,asdt.coloros.com
 DOMAIN-SUFFIX,asdt-server5-cn.allawntech.com
 DOMAIN-SUFFIX,asdt-server.wanyol.com
