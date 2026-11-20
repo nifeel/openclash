@@ -30,11 +30,136 @@ DOMAIN-SUFFIX,logservice.hicloud.com
 DOMAIN-SUFFIX,logservice1.hicloud.com
 DOMAIN-SUFFIX,metrics2.data.hicloud.com
 
-# OPPO / 一加 / realme (ColorOS)
+# OPPO / 一加 / realme (ColorOS & 运营商终端自注册)
+# 注：精准放行 conn-service-cn-*.allawntech.com (Wi-Fi generate204 连通性检测)
+#     与 newds-api-cn-*.allawntech.com (系统自动校时)，避免 Wi-Fi 图标出现感叹号。
+# 1) 运营商终端自注册与 DM 隐藏采集 (RegService / CTAutoRegist)
+DOMAIN-SUFFIX,fxltsbl.com
+DOMAIN-SUFFIX,zzhc.vnet.cn
+DOMAIN-SUFFIX,dm.189.cn
+DOMAIN-SUFFIX,selfreg.ct10000.com
+DOMAIN-SUFFIX,b.odata.cc
+DOMAIN-SUFFIX,in.uedas.cn
+# 2) ColorOS DCS (com.oplus.statistics.rom) XOR 混淆动态配置总控
+DOMAIN-SUFFIX,mdp-appconf-cn.heytapdl.com
+DOMAIN-SUFFIX,mdp-appconf.heytapdl.com
+DOMAIN-SUFFIX,mdp-appconf-sg.heytapdl.com
+DOMAIN-SUFFIX,mdp-appconf-eu.heytapdl.com
+DOMAIN-SUFFIX,mdp-appconf-in.heytapdl.com
+DOMAIN-SUFFIX,mdp-appconf-cn.heytapdownload.com
+DOMAIN-SUFFIX,mdp-appconf.heytapdownload.com
+DOMAIN-SUFFIX,appconf.heytapdownload.com
+# 3) PostmanService / OLC / LogKit / EAP 售后诊断日志投递
+DOMAIN-SUFFIX,asdt.coloros.com
+DOMAIN-SUFFIX,asdt-server5-cn.allawntech.com
+DOMAIN-SUFFIX,asdt-server.wanyol.com
+DOMAIN-SUFFIX,asdt-server5-cn.wanyol.com
+DOMAIN-SUFFIX,asdt-server5-dev.wanyol.com
+DOMAIN-SUFFIX,asdt-server5-cn-dev.wanyol.com
+DOMAIN-SUFFIX,asdt.romtest.wanyol.com
+DOMAIN-SUFFIX,asdt-server-sg.allawnos.com
+DOMAIN-SUFFIX,asdt-server5-sg.allawnos.com
+DOMAIN-SUFFIX,asdt-server5-fr.allawnos.com
+DOMAIN-SUFFIX,asdt-server5-in.allawnos.com
+DOMAIN-SUFFIX,asdt-server5-us.allawnos.com
+DOMAIN-SUFFIX,tts.oppoer.me
+DOMAIN-SUFFIX,tts-test.wanyol.com
+DOMAIN-SUFFIX,servicetest-sg.myoppo.com
+DOMAIN-SUFFIX,log-eap.coloros.com
+DOMAIN-SUFFIX,log-eap-in.coloros.com
+DOMAIN-SUFFIX,log-eap-sg.coloros.com
+DOMAIN-SUFFIX,eap-log-in.allawnos.com
+DOMAIN-SUFFIX,eap-log-ru.allawnos.com
+DOMAIN-SUFFIX,eap-log-sg.allawnos.com
+DOMAIN-SUFFIX,moa-upload-online.coloros.com
+DOMAIN-SUFFIX,moa-upload-online-in.coloros.com
+DOMAIN-SUFFIX,moa-upload-in.allawnos.com
+DOMAIN-SUFFIX,moa-upload-sg.allawnos.com
+DOMAIN-SUFFIX,sea-log-rcv.vansound.com
+# 4) 欧加 (OPPO / OnePlus / HeyTap / NearMe) 核心埋点与统计网关
 DOMAIN-SUFFIX,tracking.oppomobile.com
+DOMAIN-SUFFIX,dc.oppomobile.com
+DOMAIN-SUFFIX,stat.oppomobile.com
+DOMAIN-SUFFIX,track.oppomobile.com
+DOMAIN-SUFFIX,log.oppomobile.com
 DOMAIN-SUFFIX,data.oppomobile.com
+DOMAIN-SUFFIX,ulog.oppomobile.com
+DOMAIN-SUFFIX,dc.heytapmobile.com
+DOMAIN-SUFFIX,stat.heytapmobile.com
+DOMAIN-SUFFIX,track.heytapmobile.com
+DOMAIN-SUFFIX,log.heytapmobile.com
+DOMAIN-SUFFIX,data.heytapmobile.com
+DOMAIN-SUFFIX,ulog.heytapmobile.com
+DOMAIN-SUFFIX,dc-dragate-sg.heytapmobile.com
+DOMAIN-SUFFIX,dc-stat-eu.heytapmobile.com
+DOMAIN-SUFFIX,dc-stat-in.heytapmobile.com
+DOMAIN-SUFFIX,mdp-usertrace-in.heytapmobile.com
+DOMAIN-SUFFIX,mdp-usertrace-sg.heytapmobile.com
+DOMAIN-SUFFIX,dc.heytapmobi.com
+DOMAIN-SUFFIX,stat.heytapmobi.com
+DOMAIN-SUFFIX,track.heytapmobi.com
+DOMAIN-SUFFIX,log.heytapmobi.com
+DOMAIN-SUFFIX,dc-dragate-cn.heytapmobi.com
+DOMAIN-SUFFIX,mdp-usertrace-cn.heytapmobi.com
+DOMAIN-SUFFIX,ums-telemetry-cn.heytapmobi.com
+DOMAIN-SUFFIX,ums-rum-cn.heytapimage.com
+DOMAIN-SUFFIX,ums-rum-global.heytapimage.com
+DOMAIN-SUFFIX,logforward.browser.heytapmobi.com
+DOMAIN-SUFFIX,stat.browser.heytapmobi.com
+DOMAIN-SUFFIX,obus-dc10-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dc136101-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dc2-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dc20058-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dc2007-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dc20123-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dc20157-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dc2020-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dctech-cn.heytapmobi.com
+DOMAIN-SUFFIX,obus-dcyitai-cn.heytapmobi.com
+DOMAIN-SUFFIX,stat.nearme.com.cn
+DOMAIN-SUFFIX,track.nearme.com.cn
+DOMAIN-SUFFIX,kv.nearme.com.cn
+DOMAIN-SUFFIX,log.nearme.com.cn
+DOMAIN-SUFFIX,dcs.allawntech.com
+DOMAIN-SUFFIX,track.allawntech.com
+DOMAIN-SUFFIX,stat.allawntech.com
+DOMAIN-SUFFIX,log.allawntech.com
+DOMAIN-SUFFIX,ule.allawntech.com
+DOMAIN-SUFFIX,dcs.allawnos.com
+DOMAIN-SUFFIX,track.allawnos.com
+DOMAIN-SUFFIX,stat.allawnos.com
+DOMAIN-SUFFIX,log.allawnos.com
+DOMAIN-SUFFIX,open.oneplus.net
+DOMAIN-SUFFIX,analytics.oneplus.cn
+DOMAIN-SUFFIX,analytics.oneplus.net
+DOMAIN-SUFFIX,stat.oneplus.cn
+DOMAIN-SUFFIX,uc-track-ru.oneplus.com
+# 5) 系统广告联盟与推送画像 (com.opos.ads)
 DOMAIN-SUFFIX,ads.oppomobile.com
+DOMAIN-SUFFIX,adsfs.oppomobile.com
+DOMAIN-SUFFIX,g.ko.oppomobile.com
 DOMAIN-SUFFIX,bdapi.coloros.com
+DOMAIN-SUFFIX,ads.heytapmobile.com
+DOMAIN-SUFFIX,adx.heytapmobile.com
+DOMAIN-SUFFIX,ads.heytapmobi.com
+DOMAIN-SUFFIX,push-ads-cn.heytapmobi.com
+DOMAIN-SUFFIX,adm-smc-cn.heytapmobi.com
+DOMAIN-SUFFIX,adsfs-sdkconfig.heytapimage.com
+DOMAIN-SUFFIX,uapi.ads.heytapmobi.com
+DOMAIN-SUFFIX,b2-data.ads.heytapmobi.com
+DOMAIN-SUFFIX,adx-ads.realmemobile.com
+DOMAIN-SUFFIX,adx-in-ads.realmemobile.com
+DOMAIN-SUFFIX,data-ads.realmemobile.com
+# 6) 厂商自建 HTTPDNS (防止系统服务绕过本地 DNS 拦截)
+DOMAIN-SUFFIX,httpdns.ocloud.oppomobile.com
+DOMAIN-SUFFIX,httpdns.push.oppomobile.com
+DOMAIN-SUFFIX,httpdns.ocloud.heytapmobi.com
+DOMAIN-SUFFIX,httpdns.push.heytapmobi.com
+DOMAIN-SUFFIX,httpdns.heytapmobile.com
+DOMAIN-SUFFIX,httpdns-ocloud.heytapmobile.com
+DOMAIN-SUFFIX,httpdns-push.heytapmobile.com
+DOMAIN-SUFFIX,httpdns.allawntech.com
+DOMAIN-SUFFIX,httpdns.ocloud-test.wanyol.com
 
 # vivo / iQOO (OriginOS)
 DOMAIN-SUFFIX,data.vivo.com.cn
