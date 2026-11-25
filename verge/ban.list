@@ -247,3 +247,5 @@ DOMAIN,lbssp.map.qq.com
 # 不整体屏蔽 amap.com、map.qq.com、googleapis.com 或 ls.apple.com，避免扩大地图功能影响。
 # 上述定位端点不保证覆盖所有版本；已缓存位置、GPS、IP 和服务端定位不在拦截保证范围内。
 
+# T3 Code ingest
+DOMAIN,ingest.t3.codes
