@@ -12,7 +12,7 @@ IP-CIDR,139.196.201.82/32,no-resolve
 DOMAIN-SUFFIX,deltahealth.com.cn
 IP-CIDR,180.167.95.250/32,no-resolve
 IP-CIDR,112.19.9.109/32,no-resolve
-DOMAIN-SUFFIX,yingsheng.xin,no-resolve
+DOMAIN-SUFFIX,yingsheng.xin
 DOMAIN-SUFFIX,bdg-brain.com
 DOMAIN-SUFFIX,hcrm.mu-kang.com
 DOMAIN-SUFFIX,synyi.com
@@ -641,3 +641,13 @@ DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,zhipin.com
 DOMAIN-SUFFIX,zhongsou.com
 DOMAIN-SUFFIX,zhuihd.com
+
+# ByteDance / Volcengine CDN (migrated from router config)
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,volcengine.com
+DOMAIN-SUFFIX,volccdn.com
+DOMAIN-SUFFIX,bytedns1.com
+DOMAIN-SUFFIX,queniuum.com
+DOMAIN-SUFFIX,bytefcdn.com
+DOMAIN-SUFFIX,bytevdn.com
+DOMAIN-SUFFIX,ibytedtos.com
