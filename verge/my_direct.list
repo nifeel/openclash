@@ -1,5 +1,5 @@
 # 自定义国内直连连补充列表(国内域名不解析时，防止走代理使用)
-DOMAIN,gdmf.apple.com,DIRECT
+DOMAIN,gdmf.apple.com
 
 #work
 IP-CIDR,43.166.23.12/32,no-resolve
