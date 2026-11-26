@@ -651,3 +651,9 @@ DOMAIN-SUFFIX,queniuum.com
 DOMAIN-SUFFIX,bytefcdn.com
 DOMAIN-SUFFIX,bytevdn.com
 DOMAIN-SUFFIX,ibytedtos.com
+
+# Direct large-file download CDNs (avoid saturating proxy node)
+DOMAIN,vscode.download.prss.microsoft.com
+DOMAIN-SUFFIX,download.prss.microsoft.com
+DOMAIN,download-cdn.jetbrains.com
+DOMAIN,download.jetbrains.com
