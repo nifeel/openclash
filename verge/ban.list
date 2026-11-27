@@ -224,7 +224,7 @@ DOMAIN-SUFFIX,hu.jiagu.360.cn
 DOMAIN-SUFFIX,iprofiles.apple.com
 DOMAIN-SUFFIX,mdmenrollment.apple.com
 DOMAIN-SUFFIX,deviceenrollment.apple.com
-DOMAIN-SUFFIX,gdmf.apple.com
+# DOMAIN-SUFFIX,gdmf.apple.com
 DOMAIN-SUFFIX,acmdm.apple.com
 DOMAIN-SUFFIX,albert.apple.com
 
@@ -249,3 +249,32 @@ DOMAIN,lbssp.map.qq.com
 
 # T3 Code ingest
 DOMAIN,ingest.t3.codes
+
+# ==============================================================================
+# 4. 开发工具遥测与通用网页统计 (VSCode / JetBrains / Google Analytics)
+# ==============================================================================
+
+# VSCode / Microsoft 遥测
+DOMAIN-SUFFIX,dc.services.visualstudio.com
+DOMAIN-SUFFIX,vortex.data.microsoft.com
+DOMAIN-SUFFIX,mobile.events.data.microsoft.com
+DOMAIN-SUFFIX,browser.events.data.microsoft.com
+DOMAIN-SUFFIX,default.exp-tas.com
+DOMAIN-SUFFIX,telemetry.vscode.dev
+
+# JetBrains 遥测（不影响授权与插件下载）
+DOMAIN-SUFFIX,data.services.jetbrains.com
+DOMAIN-SUFFIX,fus.jetbrains.com
+DOMAIN-SUFFIX,stat.jetbrains.com
+
+# Google Analytics
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,analytics.google.com
+
+# ==============================================================================
+# 5. 字节系埋点与日志上报 (ByteDance / 飞书 / 剪映 / 抖音)
+# ==============================================================================
+DOMAIN-SUFFIX,mon.snssdk.com
+DOMAIN-SUFFIX,log.snssdk.com
+DOMAIN-SUFFIX,mcs.snssdk.com
+DOMAIN-SUFFIX,toblog.ctobsnssdk.com
