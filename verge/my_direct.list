@@ -657,3 +657,17 @@ DOMAIN,vscode.download.prss.microsoft.com
 DOMAIN-SUFFIX,download.prss.microsoft.com
 DOMAIN,download-cdn.jetbrains.com
 DOMAIN,download.jetbrains.com
+
+# Apple ID 登录认证 / 激活 / APNs 推送（走机房代理 IP 易被 gsa.apple.com 返回 503 拒签，需直连）
+DOMAIN,gsa.apple.com
+DOMAIN,gsas.apple.com
+DOMAIN,idmsa.apple.com
+DOMAIN,appleid.apple.com
+DOMAIN,auth.apple.com
+DOMAIN,setup.icloud.com
+DOMAIN,init.push.apple.com
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN,ocsp2.apple.com
+DOMAIN,ess.apple.com
+DOMAIN,identity.ess.apple.com
+DOMAIN,captive.apple.com
